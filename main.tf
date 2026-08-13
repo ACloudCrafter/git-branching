@@ -13,6 +13,6 @@ features {}
 
 
 resource "azurerm_resource_group" "rg" {
-  name = "rg-1"
+  name = "rg-test"
   location = "centralindia"
 }
