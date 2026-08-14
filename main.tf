@@ -12,7 +12,7 @@ features {}
 }
 
 resource "azurerm_storage_account" "stg" {
-  depends_on = azurerm_resource_group.rg
+  depends_on = [azurerm_resource_group.rg]
   name                     = "storageaccountname"
   resource_group_name      = "rg-1"
   location                 = "centralindia"
